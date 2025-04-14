@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: security
+
+#Configuración de base de datos
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/securitydb
+    username: sm
+    password: 1234
+  # JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: create-drop #update # When you launch the application for the first time - switch "none" at "create"
+    show-sql: true
+    database: postgresql
+
+  #security:
+  #  user:
+  #    name: jear
+  #    password: 1234
